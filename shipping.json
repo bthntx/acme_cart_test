@@ -1,0 +1,16 @@
+{
+  "rates": [
+    {
+      "moreThan": 0,
+      "price": 4.95
+    },
+    {
+      "moreThan": 50,
+      "price": 2.95
+    },
+    {
+      "moreThan": 90,
+      "price": 0
+    }
+  ]
+}

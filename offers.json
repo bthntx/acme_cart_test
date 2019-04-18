@@ -1,0 +1,14 @@
+{
+  "offers": [
+    {
+      "codeCondition": "R01",
+      "each_n_item": 2,
+      "discount_percents": 50
+    },
+    {
+      "codeCondition": "G01",
+      "each_n_item": 3,
+      "discount_percents": 30
+    }
+  ]
+}

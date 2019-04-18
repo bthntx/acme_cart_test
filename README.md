@@ -1,7 +1,12 @@
+Product catalogue, delivery charge rules, and offers are stored in JSON files.
 
- implement the basket which needs to have the following interface –
-• It is initialised with the product catalogue, delivery charge rules, and offers (the
-format of how these are passed it up to you)
-• It has an add method that takes the product code as a parameter.
-• It has a total method that returns the total cost of the basket, taking into account
-the delivery and offer rules.
+I assume that shipping charges array sorted by moreThan ASC already
+I assume that product code is uniq key, and safe as string to use it as key in associate array
+
+How it works: 
+  Adding items to array of items, if item already exist in this item increment qty.
+  When calculating total - we run through each item (even with same code) and trying to apply offer price modifier
+  After that we calculate shipping charges based on previous summ.
+  Return total value
+  
+  
