@@ -78,7 +78,7 @@ class Cart
         $offers = $this->findOffersForItem($product["code"]);
         $price = $product["price"];
         foreach ($offers as $offer) {
-            if ($i % $offer["each_n_item"]) {
+            if (($i + 1) % $offer["each_n_item"] == 0) {
                 $price = $price * $offer["discount_percents"] / 100;
             }
         }
